@@ -20,8 +20,7 @@ nav{
             li{
                 display: inline;
                 padding: 4px 3px 1px;
-                border: $borde;
-                border-radius: 15px;
+                @include borde(15px,$secundario);
             }
             @media only screen and (min-width: 768px){li{font-size: inherit;}}
         
