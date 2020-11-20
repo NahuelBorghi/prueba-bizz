@@ -1,0 +1,21 @@
+footer{
+    background-color: $primario;
+    color: white;
+    position: fixed;
+    bottom: 1%;
+    left: 0;
+    padding: 5px;
+}
+.foot{
+    display: grid;
+    grid-template-areas: "redes mail texto" "cp cp cp";
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-rows: 1fr auto;
+    grid-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+.redes{grid-area: redes;}
+.mail{grid-area: mail;}
+.texto{grid-area: texto;}
+.cp{grid-area: cp;}

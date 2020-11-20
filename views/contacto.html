@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Bizz Customs - grids</title>
+        <link rel="stylesheet" href="../assets/style/css/style.css"/>
+        <!--fuente: yanone kafeesatz-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"/>
+        <script src="../assets/js/prueba.js" language="javascript" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <form class="busqueda"  action="" method="POST">
+                <img class="lupa display-inline" src="../assets/images/lupa.png">
+                <input class="buscar" type="text" placeholder="buscar">
+            </form>
+            <a href="../views/usuario.html">
+                usuario
+            </a>
+        </header>
+        <div class="logo"><a href="../index.html"><img src="../assets/img pagina/logo.png"/></a></div>
+        <nav>
+            <ul> 
+                <li>MENU</li>
+                <ul>
+                    <li><a href="../views/productos.html">Productos</a></li>
+                    <li><a href="../views/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class=" active"><a href="../views/contacto.html">Contacto</a></li>
+                    <li><a href="../views/galeria.html">Galeria</a></li>
+                    <li><a href="../views/usuario.html">Usuario</a></li>
+                </ul>
+            </ul>
+            
+        </nav>
+        <section>
+            <center>
+                <div class="contacto">
+                    <div class="redes">
+                        <img class="redSocial" src="" href=""/> <!--logo de whatsapp con link al mensaje directo-->
+                        <h4>Comunicate por Whatsapp</h4><p>+54 1111 - 111111</p><hr>
+                        <img class="redSocial" src="" href=""/> <!--logo de telefono con link al mensaje directo-->
+                        <h4>Comunicate por Whatsapp</h4><p>+54 1111 - 111111</p><hr>
+                        <img class="redSocial" src="" href=""/> <!--logo de mail con link al mensaje directo-->
+                        <h4>Mails</h4><p>Ventas@Bizz.com <hr> Atencion_alCliente@Bizz.com</p>
+                    </div>
+                    <div class="mail">
+                        <form action="" method="get" enctype="multipart/form-data">
+                            <input class="datos" type="text" placeholder="nombre y apellido"/>
+                            <input class="datos" type="email" placeholder="mail"/>
+                            <select id="desplegable" name="asunto" style="display: block">
+                                <option value="ventas">ventas</option>
+                                <option value="presupuesto">presupuesto</option>
+                                <option value="reclamos">reclamos</option>
+                                <option value="contacto">contacto por redes</option>
+                            </select>
+                            <input id="recibir-mail" type="checkbox" name="aceptar" value="1"/>
+                            <label for="recibir-mail">¿desea recibir nuestras ofertas por mail?</label>
+                            <textarea  class="datos" style="display: block; height:150px; width: 400px;" placeholder="ingrese su mensaje aqui"></textarea>
+                            <input class="boton" type="submit" value="enviar"/>
+                            <input class="boton" type="reset" value="limpiar"/>
+                        </form>
+                    </div>
+                </div>
+            </center>
+        </section>
+        <footer>
+            <div class="foot">
+                <div class="redes">
+                    <h4>seguinos en:</h4>
+                    <img class="icon" src=""/><!-- facebook -->
+                    <img class="icon" src=""/><!-- instagram -->
+                    <img class="icon" src=""/><!-- youtube -->
+                </div>
+                <div class="mail">
+                    <h4>¿Querés recibir todas nuestras ofertas?</h4>
+                    <p style="font-size: small">Subscribite a nuestro newsletter</p>
+                    <form action="" method="get" enctype="multipart/form-data">
+                        <input type="email" placeholder="mail"/>
+                    </form>
+                </div>
+                <div class="texto">
+                    <small>Animamos a los usuarios a llevar a cabo sus propias investigaciones antes de comprar on-line. Bizz Customs no se hace responsable por cualquier perdida o daño resultante de cualquier negocio realizado en este sitio web.</small>
+                </div>
+                <div class="cp">
+                    <small>Copyright © 2020 - Bizz Customs - Todos los derechos reservados</small>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

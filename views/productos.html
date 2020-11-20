@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Bizz Customs - grids</title>
+        <link rel="stylesheet" href="../assets/style/css/style.css"/>
+        <!--fuente: yanone kafeesatz-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"/>
+        <script src="../assets/js/prueba.js" language="javascript" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <form class="busqueda"  action="" method="POST">
+                <img class="lupa display-inline" src="../assets/images/lupa.png">
+                <input class="buscar" type="text" placeholder="buscar">
+            </form>
+            <a href="../views/usuario.html">
+                usuario
+            </a>
+        </header>
+        <div class="logo"><a href="../index.html"><img src="../assets/img pagina/logo.png"/></a></div>
+        <nav>
+            <ul> 
+                <li>MENU</li>
+                <ul>
+                    <li class=" active"><a href="../views/productos.html">Productos</a></li>
+                    <li><a href="../views/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="../views/contacto.html">Contacto</a></li>
+                    <li><a href="../views/galeria.html">Galeria</a></li>
+                    <li><a href="../views/usuario.html">Usuario</a></li>
+                </ul>
+            </ul>
+            
+        </nav>
+        <section>
+            <div class="asideLeft"> <!-- aside -->
+                <h2>Productos</h2>
+                <div>
+                    <ul>
+                    <li><a href="">tipo 1</a></li>
+                    <li><a href="">tipo 2</a></li>
+                    <li><a href="">tipo 3</a></li>
+                    <li><a href="">tipo 4</a></li>
+                    <li><a href="">tipo 5</a></li>
+                    <li><a href="">tipo 6</a></li>
+                    <li><a href="">tipo 7</a></li>
+                    <li><a href="">tipo 8</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filtros">
+                <h3>Filtros</h3>
+                <form action="" method="get" enctype="multipart/form-data">
+                    <select class="desplegable" name="color" style="display: inline; margin-right: 20px;">
+                        <option value="blanco">blanco</option>
+                        <option value="negro">negro</option>
+                        <option value="amarillo">amarillo</option>
+                        <option value="azul">azul</option>
+                        <option value="naranja">naranja</option>
+                        <option value="RGB">RGB</option>
+                        <option value="rojo">rojo</option>
+                        <option value="rosa">rosa</option>
+                        <option value="verde">verde</option>
+                        <option value="violeta">violeta</option>
+                    </select>
+                    <select class="desplegable" name="orden" style="display: inline; margin-left: 20px;">
+                        <option value="recomendados">recomendados</option>
+                        <option value="baratos">precio: menor a mayor</option>
+                        <option value="caros">precio: menor a mayor</option>
+                        <option value="a-z">orden alfabetico</option>
+                    </select>
+                    <p id="precio">precio desde: <input class="numeros" type="number" placeholder="minimo" style="margin-right: 5px;"/> hasta:<input class="numeros" type="number" placeholder="maximo"/></p>
+                    <input id="aceptar" type="submit" value="aplicar"/>
+                </form>
+            </div>
+            <!-- final barra de filtro -->
+            <!-- inicio de productos -->
+            <div class="listaArticulos">
+                <div class="article">
+                    <img src="../assets/images/productos/elevador aluminio.jpg" />
+                    <a href="producto.html"> Elevador de monitor (aluminio)</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/elevador madera.jpeg" />
+                    <a href="producto.html"> Elevador de monitor (madera)</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/madera apoyabrazo.jpg" />
+                    <a href="producto.html"> Reposa muñecas (madera)</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/madera espacio.jpg" />
+                    <a href="producto.html"> Barra espaciadora (madera)</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/kit madera.jpg" />
+                    <a href="producto.html"> Kit teclas de madera</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/kit extension blanco.jpg" />
+                    <a href="producto.html"> Kit extensiones blancas</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/soporte gpu.png" />
+                    <a href="producto.html"> Soporte vertical de GPU</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/soporte gpu horizontal.jpg" />
+                    <a href="producto.html"> Soporte horizontal de GPU</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/usb.jpg" />
+                    <a href="producto.html"> Kit cable usb</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/sleeved 3.5.png" />
+                    <a href="producto.html"> Cable forrado jack 3.5 estereo</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/trenza jack 3,5.jpg" />
+                    <a href="producto.html"> Cable trenzado forrado jack 3.5 estereo</a>
+                </div>
+                <div class="article">
+                    <img src="../assets/images/productos/extension en L.jpg" />
+                    <a href="producto.html"> kit extensiones en L</a>
+                </div>
+            </div>
+            <!-- final de productos -->
+            <!-- lista de paginas -->
+            <center>
+                <div class="paginacion">
+                    <p> pagina:  </p>
+                    <a class="itemPagina" href=""> < anterior </a>
+                    <a class="itemPagina" href=""> 1 </a>
+                    <a class="itemPagina" href=""> 2 </a>
+                    <a class="itemPagina" href=""> 3 </a>
+                    <a class="itemPagina" href=""> 4 </a>
+                    <a class="itemPagina" href=""> 5 </a>
+                    <a class="itemPagina" href=""> 6 </a>
+                    <a class="itemPagina" href=""> 7 </a>
+                    <a class="itemPagina" >...</a>
+                    <a class="itemPagina"  href=""> siguiente > </a>
+                </div>
+            </center>
+        </section>
+        <footer>
+            <div class="foot">
+                <div class="redes">
+                    <h4>seguinos en:</h4>
+                    <img class="icon" src=""/><!-- facebook -->
+                    <img class="icon" src=""/><!-- instagram -->
+                    <img class="icon" src=""/><!-- youtube -->
+                </div>
+                <div class="mail">
+                    <h4>¿Querés recibir todas nuestras ofertas?</h4>
+                    <p style="font-size: small">Subscribite a nuestro newsletter</p>
+                    <form action="" method="get" enctype="multipart/form-data">
+                        <input type="email" placeholder="mail"/>
+                    </form>
+                </div>
+                <div class="texto">
+                    <small>Animamos a los usuarios a llevar a cabo sus propias investigaciones antes de comprar on-line. Bizz Customs no se hace responsable por cualquier perdida o daño resultante de cualquier negocio realizado en este sitio web.</small>
+                </div>
+                <div class="cp">
+                    <small>Copyright © 2020 - Bizz Customs - Todos los derechos reservados</small>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

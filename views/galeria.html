@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+        <title>Bizz Customs - grids</title>
+        <link rel="stylesheet" href="../assets/style/css/style.css"/>
+        <!--fuente: yanone kafeesatz-->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <!--mis primeras pruebas en js-->
+        <script src="../assets/js/prueba.js" language="javascript" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+            <form class="busqueda"  action="" method="POST">
+                <img class="lupa display-inline" src="../assets/images/lupa.png">
+                <input class="buscar" type="text" placeholder="buscar">
+            </form>
+            <a href="../views/usuario.html">
+                usuario
+            </a>
+        </header>
+        <div class="logo"><a href="../index.html"><img src="../assets/img pagina/logo.png"/></a></div>
+        <nav>
+            <ul> 
+                <li>MENU</li>
+                <ul>
+                    <li><a href="../views/productos.html">Productos</a></li>
+                    <li><a href="../views/sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="../views/contacto.html">Contacto</a></li>
+                    <li class=" active"><a href="../views/galeria.html">Galeria</a></li>
+                    <li><a href="../views/usuario.html">Usuario</a></li>
+                </ul>
+            </ul>
+            
+        </nav>
+        <section>
+            <div id="demo2" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators"><!-- Indicadores inferiores -->
+                  <li data-target="#demo2" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo2" data-slide-to="1"></li>
+                  <li data-target="#demo2" data-slide-to="2"></li>
+                  <li data-target="#demo2" data-slide-to="3"></li>
+                </ul>
+                <div class="carousel-inner"><!-- imagenes del slider -->
+                    <a class="carousel-mas" href="">Nuestras imagenes</a>
+                    <div class="carousel-item active">
+                        <img src="../assets/images/productos/setup.jpg"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/productos/esquinero.jpg"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/productos/madera apoyabrazo.jpg"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/productos/soporte de madera auris.jpg"/>
+                    </div>
+                </div>
+                <!-- controles de anterior y siguiente -->
+                <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo2" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <ul class="carousel-indicators"><!-- Indicadores inferiores -->
+                  <li data-target="#demo" data-slide-to="0" class="active"></li>
+                  <li data-target="#demo" data-slide-to="1"></li>
+                  <li data-target="#demo" data-slide-to="2"></li>
+                  <li data-target="#demo" data-slide-to="3"></li>
+                </ul>
+                <div class="carousel-inner"><!-- imagenes del slider -->
+                    <a class="carousel-mas" href="">imagenes de los usuarios</a>
+                    <div class="carousel-item active">
+                        <img src="../assets/images/galeria/habitacion.jpg"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/galeria/pc.jpg"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/galeria/bungee.jpg"/>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/images/galeria/soporte pared.jpg"/>
+                    </div>
+                </div>
+                <!-- controles de anterior y siguiente -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </section>
+        <footer>
+            <div class="foot">
+                <div class="redes">
+                    <h4>seguinos en:</h4>
+                    <img class="icon" src=""/><!-- facebook -->
+                    <img class="icon" src=""/><!-- instagram -->
+                    <img class="icon" src=""/><!-- youtube -->
+                </div>
+                <div class="mail">
+                    <h4>¿Querés recibir todas nuestras ofertas?</h4>
+                    <p style="font-size: small">Subscribite a nuestro newsletter</p>
+                    <form action="" method="get" enctype="multipart/form-data">
+                        <input type="email" placeholder="mail"/>
+                    </form>
+                </div>
+                <div class="texto">
+                    <small>Animamos a los usuarios a llevar a cabo sus propias investigaciones antes de comprar on-line. Bizz Customs no se hace responsable por cualquier perdida o daño resultante de cualquier negocio realizado en este sitio web.</small>
+                </div>
+                <div class="cp">
+                    <small>Copyright © 2020 - Bizz Customs - Todos los derechos reservados</small>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

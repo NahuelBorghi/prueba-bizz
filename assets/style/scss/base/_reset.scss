@@ -1,0 +1,29 @@
+html{
+    font-family: $yanone;
+    font-size: $font-size;
+}
+body{
+    display:grid;
+    grid-template-rows:1fr auto auto;
+    font-size:$normal;
+    margin:0;
+}
+@media only screen and (min-width: 480px){body{grid-template-areas: "logo header header header" "nav nav nav nav" "section section section section";grid-template-columns: 1fr 1fr 1fr 1fr;}}
+@media only screen and (min-width: 768px){body{grid-template-areas: "header header header header" "logo nav nav nav" "section section section section";grid-template-columns: 0.7fr 1fr 1fr 1fr;}}
+@media only screen and (min-width: 1200px){body{grid-template-areas:"logo header header header" "nav nav nav nav" "section section section section";}}
+h1,h2,h3,h4,h5,h6{
+    margin:10px;
+}
+a{
+    text-decoration:none; 
+    color:unset;
+     display:block;
+}
+a:hover{
+    text-decoration:none;
+    color:$secundario;
+    transition:1s;
+}
+ul{
+    list-style: none;
+}

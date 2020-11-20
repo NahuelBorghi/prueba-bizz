@@ -1,0 +1,56 @@
+nav{
+    grid-area: nav;
+    color:white;
+    background-color: $primario;
+    ul{
+        text-align: center;
+        font-size: $grande;
+        margin: 1% 0% 0.5% 0%;
+        padding-inline-start: 0;
+        li:hover + ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: $borde;
+            padding-inline-start: 0;
+            margin: 0;
+        }
+        ul{
+            display: none;
+            li{
+                display: inline;
+                padding: 4px 3px 1px;
+                border: $borde;
+                border-radius: 15px;
+            }
+            @media only screen and (min-width: 768px){li{font-size: inherit;}}
+        
+        }
+        @media only screen and (min-width: 768px){
+            ul{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                font-size: $normal;
+                padding-inline-start: 0;
+                margin: 0;
+            }
+        }
+        ul:hover{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            font-size: $normal;
+            padding-inline-start: 0;
+            margin: 0;
+        }
+    }
+    @media only screen and (min-width: 768px){ul{font-size: 0rem;margin: 1% 0% 1% 0%;}}
+    @media only screen and (min-width: 1200px){ul{margin: 0.5% 0% 0.5%;}}
+    
+}
+@media only screen and (min-width: 768px){nav{margin-top: 5%;}}
+@media only screen and (min-width: 1200px){nav{margin-top: 0;}}
+
+.active{background-color: $secundario;}
+.active a:hover{color: $primario;}
