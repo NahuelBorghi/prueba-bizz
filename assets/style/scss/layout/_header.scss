@@ -12,7 +12,7 @@ header{
     align-items: center;
     background-color: $primario;
     flex-basis: 285px;
-    border-radius: 10px;
+    @include borde(15px,none);
 }
 @media only screen and (min-width: 768px){/*Tablet*/.busqueda{margin-left: 15%;}}
 @media only screen and (min-width: 1200px){/*Desktop*/.busqueda{margin-left: 7%;}}
@@ -38,8 +38,7 @@ header{
 }
 .buscar{
     display: inline;
-    border: $borde;
-    border-radius: 10px;
+    @include borde(15px,$secundario);
     font-size: 1.8rem;
     padding-right: 5%;
 }

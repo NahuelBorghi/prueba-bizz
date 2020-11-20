@@ -1,8 +1,4 @@
 /*1rem=10px*/
-html {
-  font-family: "Yanone Kaffeesatz", sans-serif;
-  font-size: 62.5%; }
-
 body {
   display: grid;
   grid-template-rows: 1fr auto auto;
@@ -38,6 +34,10 @@ a:hover {
 
 ul {
   list-style: none; }
+
+html {
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 62.5%; }
 
 nav {
   grid-area: nav;
@@ -116,7 +116,8 @@ header {
   align-items: center;
   background-color: #414E89;
   flex-basis: 285px;
-  border-radius: 10px; }
+  border: 2px solid none;
+  border-radius: 15px; }
 
 @media only screen and (min-width: 768px) {
   /*Tablet*/
@@ -173,7 +174,7 @@ header {
 .buscar {
   display: inline;
   border: 2px solid #4FAEE1;
-  border-radius: 10px;
+  border-radius: 15px;
   font-size: 1.8rem;
   padding-right: 5%; }
 
@@ -385,10 +386,8 @@ section {
 
 .itemPagina {
   display: inline;
-  border-style: solid;
-  border-width: 2px;
-  border-radius: 5px;
-  border-color: #414E89;
+  border: 2px solid #414E89;
+  border-radius: 10px;
   font-weight: 700;
   font-variant: small-caps;
   box-shadow: 0 0.25rem 0.5rem #414E89;
@@ -412,10 +411,10 @@ section {
 .contacto .redes {
   background-color: #414E89;
   border: 2px solid #4FAEE1;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-radius: 10px;
   padding: 1%; }
 
 @media only screen and (min-width: 768px) {
@@ -462,7 +461,6 @@ textarea:focus {
   outline: none;
   border-color: #4FAEE1;
   color: #4FAEE1;
-  border-width: 3px;
   padding: 5px;
   transition: 1s; }
 
@@ -483,7 +481,7 @@ input[type="checkbox"] + label:before {
   content: '';
   width: 15px;
   height: 15px;
-  border: 2px double #4FAEE1;
+  border: 2px solid #4FAEE1;
   border-radius: 5px;
   cursor: pointer;
   vertical-align: top;
@@ -496,10 +494,9 @@ input[type="checkbox"]:checked + label:before {
   background: #4FAEE1; }
 
 .mail form input {
-  border-style: solid;
-  font-size: 1.4rem;
+  border: 2px solid #4FAEE1;
   border-radius: 10px;
-  border-color: #4FAEE1; }
+  font-size: 1.4rem; }
 
 .carousel {
   position: relative; }

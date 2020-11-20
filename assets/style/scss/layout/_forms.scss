@@ -15,8 +15,7 @@ input[type="checkbox"] + label:before {
     content: '';
     width: 15px;
     height: 15px;
-    border: 2px double $secundario;
-    border-radius:5px;
+    @include borde(5px,$secundario);
     cursor: pointer;
     vertical-align: top;
     display: inline-block;
@@ -30,10 +29,8 @@ input[type="checkbox"]:checked + label:before {
 .mail{ 
     form{ 
         input{
-            border-style: solid;
+            @include borde(10px,$secundario);
             font-size: $chica;
-            border-radius: 10px;
-            border-color: $secundario;
         }
     }
 }

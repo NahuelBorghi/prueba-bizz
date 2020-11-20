@@ -8,8 +8,7 @@ section{
     margin: 1%;
     text-align: center;
     background-color: $primario;
-    border: $borde;
-    border-radius: 15px;
+    @include borde(15px,$secundario);
     color: white;
 }
 @media only screen and (min-width: 1200px){ .asideLeft{padding: 1%;float: left;position: fixed;}}
@@ -40,8 +39,7 @@ section{
 @media only screen and (min-width: 1200px){.listaArticulos{grid-template-columns: repeat(auto-fill, 215px);grid-template-rows: repeat(auto-fill,minmax(215px,270px));margin-left: 10%;}}
 
 .article{
-    border: 2px solid $primario;
-    border-radius: 10px;
+    @include borde(10px,$primario);
     text-align: center;
     font-size: $mediana;
     box-shadow: $sombra;
@@ -67,8 +65,7 @@ section{
 #aceptar{
     background-color: white;
     color: $primario;
-    border: 2px solid $primario;
-    border-radius: 10px;
+    @include borde(10px,$primario);
     padding: 3px;
     font-weight: 600 ;
 }
@@ -81,8 +78,7 @@ section{
 #precio{display: inline-block;}
 .numeros{
     width: 80px;
-    border: 2px solid $primario;
-    border-radius: 10px;
+    @include borde(10px,$primario);
     padding: 3px;
 }
 .numeros:focus{
@@ -94,8 +90,7 @@ section{
     transition: 1s;
 }
 .desplegable{
-    border: 2px solid $primario;
-    border-radius: 10px;
+    @include borde(10px,$primario);
     padding: 3px;
     color: $primario;
     font-weight: 600;
@@ -111,10 +106,7 @@ section{
 .paginacion{max-width: 90%;text-align: center;margin: 2%;}
 .itemPagina{
     display: inline;
-    border-style: solid;
-    border-width: 2px;
-    border-radius: 5px;
-    border-color: $primario;
+    @include borde(10px,$primario);
     font-weight: 700;
     font-variant: small-caps;
     box-shadow: $sombra;
@@ -135,18 +127,16 @@ section{
 }
 .contacto .redes{
     background-color: $primario;
-    border: $borde;
+    @include borde(10px,$secundario);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-radius: 10px;
     padding: 1%;
 }
 @media only screen and (min-width:768px){.contacto .redes{font-size: $enorme;}}
 .contacto .mail{
     background-color: $primario;
-    border: $borde;
-    border-radius: 10px;
+    @include borde(10px,$secundario);
     padding: 10% 2%;
 }
 @media only screen and (min-width:768px){.contacto .mail{padding: 5%;}}
@@ -162,8 +152,7 @@ section{
     transition: 1s;
 }
 #desplegable{
-    border: $borde;
-    border-radius: 15px;
+    @include borde(15px,$secundario);
 }
 #desplegable:focus{
     padding: 2px;
@@ -172,8 +161,7 @@ section{
 }
 
 textarea{
-    border: $borde;
-    border-radius: 15px;
+    @include borde(15px,$secundario);
     resize: none;
     max-width: 300px;
 }
@@ -181,7 +169,6 @@ textarea:focus{
     outline: none;
     border-color: $secundario;
     color: $secundario;
-    border-width: 3px;
     padding: 5px;
     transition: 1s;
 }
